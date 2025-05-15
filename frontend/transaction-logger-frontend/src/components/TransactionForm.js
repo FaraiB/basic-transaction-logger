@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/TransactionForm.css";
 
 function TransactionForm({ onAddTransaction }) {
   const [description, setDescription] = useState("");
@@ -14,8 +15,8 @@ function TransactionForm({ onAddTransaction }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form onSubmit={handleSubmit} className="form">
+      <div className="form-group">
         <label htmlFor="description">Description:</label>
         <input
           type="text"
@@ -24,7 +25,7 @@ function TransactionForm({ onAddTransaction }) {
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
-      <div>
+      <div className="form-group">
         <label htmlFor="amount">Amount:</label>
         <input
           type="number"
@@ -33,7 +34,9 @@ function TransactionForm({ onAddTransaction }) {
           onChange={(e) => setAmount(e.target.value)}
         />
       </div>
-      <button type="submit">Log Transaction</button>
+      <div className="form-group btn">
+        <button type="submit">Log Transaction</button>
+      </div>
     </form>
   );
 }

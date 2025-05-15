@@ -1,8 +1,9 @@
 import React from "react";
+import "../styles/TransactionList.css";
 
 function TransactionList({ transactions }) {
   return (
-    <div>
+    <div className="transaction-list">
       <h2>Transaction History</h2>
       <ul>
         {transactions.map((transaction, index) => (
