@@ -25,9 +25,9 @@ Follow these steps to get the Transaction Logger running on your local machine:
 
 **Backend:**
 
-1.  Navigate to the `card-logger-backend` directory:
+1.  Navigate to the `backend` directory:
     ```bash
-    cd card-logger-backend
+    cd backend
     ```
 2.  Install the backend dependencies:
     ```bash
@@ -43,9 +43,9 @@ Follow these steps to get the Transaction Logger running on your local machine:
 
 **Frontend:**
 
-1.  Navigate to the `card-logger-frontend` directory:
+1.  Navigate to the `frontend/transaction-logger-frontend` directory:
     ```bash
-    cd card-logger-frontend
+    cd frontend/transaction-logger-frontend
     ```
 2.  Install the frontend dependencies:
     ```bash
